@@ -7,7 +7,7 @@ function SigninStyled () {
     <Stack component="form" sx={{width: '15vw', border: "1px solid", padding: "12px", textAlign:'center' }} spacing={2} autoComplete='off'> 
       <TextField id="admin" label="Administrator" size="small"/>
       <TextField id="password" label="Password" size="small" type='password' />
-      <Button variant="contained" sx={{width: '5vw', display:'inline-block'}} >Login</Button>
+      <Button variant="contained" type="submit">Login</Button>
     </Stack>
   )
 }
