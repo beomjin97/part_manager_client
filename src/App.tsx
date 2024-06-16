@@ -1,8 +1,9 @@
-import Signin from "./components/signin/Signin";
+import { RouterProvider } from "react-router-dom";
+import router from "./pages/router";
 
 function App() {
   return (
-    <Signin/>
+    <RouterProvider router={router} />
   );
 }
 
