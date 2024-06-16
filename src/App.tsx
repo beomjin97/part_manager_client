@@ -1,9 +1,15 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./pages/router";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { theme } from "./theme";
 
-function App() {
+
+const App = () => {
   return (
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 }
 
